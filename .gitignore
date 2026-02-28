@@ -1,0 +1,23 @@
+# Build output
+output/
+build/
+bin/
+*.exe
+*.o
+*.obj
+*.out
+
+# Generated documents
+*.txt
+document.txt
+
+# VS Code settings 
+.vscode/
+
+# Windows junk
+Thumbs.db
+*.suo
+*.user
+
+# macOS junk (if you ever use Mac)
+.DS_Store
