@@ -9,13 +9,13 @@ Two versions are included:
 
 ## Project Structure
 Building docs/
-├── BadDesign/
-│   └── DocEditor.cpp
-├── GoodDesign/
-│   └── DocEditor.cpp
-├── output/                # generated files (ignored by git)
-├── .gitignore
-└── README.md
++-- BadDesign/
+|   +-- DocEditor.cpp
++-- GoodDesign/
+|   +-- DocEditor.cpp
++-- output/                # generated files (ignored by git)
++-- .gitignore
++-- README.md
 
 
 ## 1. Bad Design (DocEditor.cpp)
