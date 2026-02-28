@@ -10,15 +10,15 @@ Two versions are included:
 ## Project Structure
 Building docs/
 ├── BadDesign/
-│   └── bad_document_editor.cpp
+│   └── DocEditor.cpp
 ├── GoodDesign/
-│   └── good_document_editor.cpp
+│   └── DocEditor.cpp
 ├── output/                # generated files (ignored by git)
 ├── .gitignore
 └── README.md
 
 
-## 1. Bad Design (bad_document_editor.cpp)
+## 1. Bad Design (DocEditor.cpp)
 
 **What it does**  
 A simple `DocumentEditor` class that stores both text and images as plain strings in a single `vector<string>`. It guesses the type during rendering by checking file extensions.
@@ -34,7 +34,7 @@ A simple `DocumentEditor` class that stores both text and images as plain string
 
 **Result**: Hard to maintain, test, or extend.
 
-## 2. Good Design (good_document_editor.cpp)
+## 2. Good Design (DocEditor.cpp)
 
 **What it does**  
 Uses proper OOP to model different document elements (text, image, newline, tab) as separate classes. Rendering is delegated to each element. Saving is separated via a strategy pattern.
